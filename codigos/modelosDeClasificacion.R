@@ -3,6 +3,8 @@
 library(RCurl)
 #para LDA
 library(MASS)
+#para multilogit
+library(nnet)
 
 #Carga de la base de datos
 url<-"https://raw.githubusercontent.com/rolandocj/proyecto-pizzas/develop/codigos/preprocesamientoDeDatos.R"
@@ -38,3 +40,22 @@ MC.test.lda <- table(pizzas.test$Marca,pizzas.test.pred.lda$class)
 MC.test.lda
 error.test.lda  <- 1-sum(diag(MC.test.lda))/sum(MC.test.lda)
 error.test.lda
+
+#.+.+.+.+.+.+.+   MULTILOGIT   .+.+.+.+.+.+.+#
+pizzas.log <- multinom(Marca ~ ., data = pizzas.train, MaxNWts = 1500)
+summary(pizzas.log)
+
+pizzas.train.pred.log <- predict(pizzas.log, pizzas.train)
+pizzas.test.pred.log <- predict(pizzas.log, pizzas.test)
+
+#Error de entrenamiento
+MC.train.log <- table(pizzas.train$Marca,pizzas.train.pred.log)
+MC.train.log
+error.train.log  <- 1-sum(diag(MC.train.log))/sum(MC.train.log)
+error.train.log
+
+#Error de prueba
+MC.test.log <- table(pizzas.test$Marca,pizzas.test.pred.log)
+MC.test.log
+error.test.log  <- 1-sum(diag(MC.test.log))/sum(MC.test.log)
+error.test.log
