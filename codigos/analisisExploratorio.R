@@ -5,17 +5,11 @@
 #Carga de paqueteria
 library(ggplot2)
 library(corrplot)
+library(RCurl)
 
-#Se asigna el working directory
-setwd("~/Maestria/CIMAT/2 Semestre/Multivariado/Proyecto1/Proyecto1")
-#se leen los datos
-pizzas<-read.csv("pizzas.csv")
-
-#Nombres de las columnas
-names(pizzas)
-names(pizzas)<-(c("Id","Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Calorias","Marca"))
-#Fijamos los nombres como variables
-attach(pizzas)
+#Carga de la base de datos
+url<-"https://raw.githubusercontent.com/rolandocj/proyecto-pizzas/develop/codigos/preprocesamientoDeDatos.R"
+source(url)
 
 #Analisis de la variable Id
 sort(Id)
@@ -25,6 +19,16 @@ plot(1:length(Id),sort(Id))
 ggplot(data = pizzas, 
        aes(x=1:length(Id),y=sort(Id)))+
   geom_point(aes(color=Marca))
+
+
+#######
+#CARBOHIDRATOS MAS GRASAS MAS PROTEINAS
+ggplot(data=pizzas,
+       aes(x=1:length(Id),y=rowSums(pizzas[,c("Proteina","Carbohidratos","Grasa")])))+
+  geom_point(aes(color=Marca))
+######
+
+
 #Tres saltos relevantes, checar si estan relacionados
 #con alguna otra variable. Puede ser por marca o algún tipo
 summary(Id)
