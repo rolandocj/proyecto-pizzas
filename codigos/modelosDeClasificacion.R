@@ -42,7 +42,7 @@ error.test.lda  <- 1-sum(diag(MC.test.lda))/sum(MC.test.lda)
 error.test.lda
 
 #.+.+.+.+.+.+.+   MULTILOGIT   .+.+.+.+.+.+.+#
-pizzas.log <- multinom(Marca ~ ., data = pizzas.train, MaxNWts = 1500)
+pizzas.log <- multinom(Marca ~ ., data = pizzas, MaxNWts = 1500)
 summary(pizzas.log)
 #confint(pizzas.log)
 
@@ -60,3 +60,35 @@ MC.test.log <- table(pizzas.test$Marca,pizzas.test.pred.log)
 MC.test.log
 error.test.log  <- 1-sum(diag(MC.test.log))/sum(MC.test.log)
 error.test.log
+
+
+
+
+
+
+#CROSS VALIDATION
+library(caret)
+set.seed(27)
+#CONTROL DE CV, 5 FOLDS
+control<-trainControl(method = "cv",number = 5)
+#REDES
+rn<-train(pizzas[,-9],as.factor(as.matrix(Marca)),
+          method="nnet",trControl=control)
+max(rn$results$Accuracy)
+#Multinom reg
+mr<-train(pizzas[,-9],as.factor(as.matrix(Marca)),
+          method="multinom",trControl=control)
+max(mr$results$Accuracy)
+#LDA
+lda<-train(pizzas[,-9],as.factor(as.matrix(Marca)),
+           method="lda",trControl=control)
+max(lda$results$Accuracy)
+#RANDOM FOREST
+rf<-train(pizzas[,-9],as.factor(as.matrix(Marca)),
+          method="rf",trControl=control)
+max(rf$results$Accuracy)
+#Arboles
+tree<-train(pizzas[,-9],as.factor(as.matrix(Marca)),
+          method="ctree",trControl=control)
+max(tree$results$Accuracy)
+
