@@ -132,7 +132,7 @@ La base de datos, \emph{pizzas.xls}, proporcionada para el desarrollo de este pr
 \item \textbf{CENIZA:} Variable tipo numérica que indica la cantidad de gramos de ceniza contenida en 100g de pizza.
 \item \textbf{SODIO:} Variable tipo numérica que indica la cantidad de gramos de sodio contenida en 100g de pizza.
 \item \textbf{CARBO:} Variable tipo numérica que indica la cantidad de gramos de carbohidratos contenida en 100g de pizza.
-\item \textbf{CALOR:} Variable tipo numérica que indica la cantidad de gramos de calorias contenida en 100g de pizza.
+\item \textbf{CALOR:} Variable tipo numérica que indica la cantidad de calorias contenida en 100g de pizza.
 \item \textbf{MARCA:} Varibale tipo string, la cual indica la marca que fabrico la pizza. Es una variable categórica.
 \end{itemize}
 
@@ -234,11 +234,37 @@ Empiricamente, un nutriologo puede considerar que los principales nutrientes de 
 \caption{Grasa+Proteina+Carbohidratos para cada observación}
 \end{figure}
 
-En la teoría de la bromatología, existen aproximaciones que se satisfacen con buena precisión entre las calorías y algunos nutrientes\\
+En la teoría de la bromatología, existen aproximaciones que se satisfacen con buena precisión entre las calorías y algunos nutrientes. Las aproximaciones se muestran a continuación:\\
+
+\begin{itemize}
+\item una caloría por cada 6 gramos carbohidratos
+\item una caloría por cada 9 gramos de grasas
+\item una caloría por cada 4 gramos de proteina
+\end{itemize}
+
+Si los datos se calcularon de manera correcta, la diferencia entre las calorías registradas debería ser próximo al nutriente dividido por su respectivo factor.\\
+
+Los cálculos de las aproximaciones arrojaron los siguientes errores para cada uno de los nutrientes\\
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nutriente&Error promedio\\ \hline\hline
+Carbohidratos&1.37\\ \hline
+Grasas&0.68\\ \hline
+Proteina&0.04\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
 
 Por último, se presenta un gráfico de correlación entre las características de los alimentos. La figura \ref{i11} muestra, al menos 4 patrones importantes, a saber, Humedad-calorias, Proteina-ceniza, Ceniza-sodio y Ceniza-carbohidratos\\
 
-\textbf{AQUI EXPLICACIÓN DE LAS CORRELACIONES ALTAS}
+La relación entre humedad y calorías, tal vez corresponda a la presencia del fosfato, pues la presencia de fosfato modifica el valor de estas dos variables y se encuentra en alimentos como el queso y carnes.\\
+
+La alta correlación entre Proteinas y cenizas puede ser explicado por la presencia de queso, pues es un alimento el cual es fuente de proteinas y minerales.\\
+
+En el caso de la alta correlación entre sodio y cenizas, puede ser explicado por la presencia de tomate, ya que, este alimento eleva el valor de ambas variables.\\
 
 \begin{figure}[h]
 \centering

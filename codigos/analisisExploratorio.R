@@ -98,23 +98,11 @@ ggplot(data=pizzas,
 ######
 
 #CALIDAD DE DATOS
-#(Grasa/9)-(Calorias)
-#(Carbohidratos/6)-(Calorias)
-#(Proteina/4)-(Calorias)
+mean((Grasa/9)-(Calorias))
+mean((Carbohidratos/6)-(Calorias))
+mean((Proteina/4)-(Calorias))
 
 #Correlación entre las variables
 correlacion<-cor(as.matrix(pizzas[,-c(1,9)]))
 corrplot.mixed(correlacion, upper="square",lower="number")
 
-
-#EN EL PDF:
-
-#Cada
-#una de las pizzas se convirtio en pure y se mezclo a conciencia, despues de lo cual se tomo una muestra
-#de la mezcla para realizar un analisis de las sustancias nutritivas.
-
-
-#investigar a fondo el proceso y buscar referencias a estos procesos
-#¿como se tomo lo muestra?
-
-#preguntar del origen de la base de datos
