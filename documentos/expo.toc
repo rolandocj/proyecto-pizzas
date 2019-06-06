@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
 \beamer@sectionintoc {2}{An\IeC {\'a}lisis exploratorio.}{6}{0}{2}
@@ -11,3 +12,17 @@
 \beamer@subsectionintoc {5}{1}{LDA}{34}{0}{5}
 \beamer@subsectionintoc {5}{2}{Multinomial}{36}{0}{5}
 \beamer@subsectionintoc {5}{3}{Validaci\IeC {\'o}n cruzada con caret}{38}{0}{5}
+=======
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
+\beamer@sectionintoc {2}{An\IeC {\'a}lisis exploratorio.}{4}{0}{2}
+\beamer@sectionintoc {3}{Modelos de reducci\IeC {\'o}n de dimensiones.}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{An\IeC {\'a}lisis de componentes principales (PCA)}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{An\IeC {\'a}lisis Factorial}{22}{0}{3}
+\beamer@sectionintoc {4}{An\IeC {\'a}lisis por agrupaci\IeC {\'o}n.}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Elecci\IeC {\'o}n del n\IeC {\'u}mero de clusters}{26}{0}{4}
+\beamer@subsectionintoc {4}{2}{Asignaci\IeC {\'o}n de clusters}{28}{0}{4}
+\beamer@sectionintoc {5}{Modelos de clasificaci\IeC {\'o}n.}{30}{0}{5}
+\beamer@subsectionintoc {5}{1}{LDA}{31}{0}{5}
+\beamer@subsectionintoc {5}{2}{Multinomial}{33}{0}{5}
+\beamer@subsectionintoc {5}{3}{Validaci\IeC {\'o}n cruzada con caret}{35}{0}{5}
+>>>>>>> Stashed changes

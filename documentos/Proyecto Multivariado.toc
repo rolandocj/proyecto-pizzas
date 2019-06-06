@@ -14,7 +14,11 @@
 \contentsline {subsection}{\numberline {5.1}LDA}{22}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Multinomial}{24}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Validaci\IeC {\'o}n cruzada con caret}{25}{subsection.5.3}
+<<<<<<< Updated upstream
 \contentsline {section}{\numberline {6}Regresi\IeC {\'o}n Multivariada}{26}{section.6}
 \contentsline {subsection}{\numberline {6.1}MANOVA}{26}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Regresi\IeC {\'o}n}{26}{subsection.6.2}
 \contentsline {section}{\numberline {7}Conclusiones.}{26}{section.7}
+=======
+\contentsline {section}{\numberline {6}Conclusiones.}{25}{section.6}
+>>>>>>> Stashed changes

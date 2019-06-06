@@ -13,7 +13,11 @@
 \BOOKMARK [2][-]{subsection.5.1}{LDA}{section.5}% 13
 \BOOKMARK [2][-]{subsection.5.2}{Multinomial}{section.5}% 14
 \BOOKMARK [2][-]{subsection.5.3}{Validaci\363n cruzada con caret}{section.5}% 15
+<<<<<<< Updated upstream
 \BOOKMARK [1][-]{section.6}{Regresi\363n Multivariada}{}% 16
 \BOOKMARK [2][-]{subsection.6.1}{MANOVA}{section.6}% 17
 \BOOKMARK [2][-]{subsection.6.2}{Regresi\363n}{section.6}% 18
 \BOOKMARK [1][-]{section.7}{Conclusiones.}{}% 19
+=======
+\BOOKMARK [1][-]{section.6}{Conclusiones.}{}% 16
+>>>>>>> Stashed changes
