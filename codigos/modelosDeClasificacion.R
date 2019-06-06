@@ -15,9 +15,11 @@ vars.num <- c("Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Cal
 
 #variables usadas para lda
 set.seed(123)
-muestra.train <- sample(1:nrow(pizzas), nrow(pizzas)/2)
+muestra.train <- sample(1:nrow(pizzas), nrow(pizzas)*(1/2))
 muestra.test <- setdiff(1:nrow(pizzas), muestra.train)
 
+table(pizzas$Marca[muestra.train])
+table(pizzas$Marca[muestra.test])
 #datasets para train y test, considerar usar otra forma de validación
 pizzas.train <- data.frame(pizzas[muestra.train,vars.num], Marca = Marca[muestra.train])
 pizzas.test <- data.frame(pizzas[muestra.test,vars.num], Marca =  Marca[muestra.test])
@@ -37,7 +39,7 @@ error.train.lda
 
 #Error en conjunto de prueba
 MC.test.lda <- table(pizzas.test$Marca,pizzas.test.pred.lda$class)
-MC.test.lda
+xtable(MC.test.lda)
 error.test.lda  <- 1-sum(diag(MC.test.lda))/sum(MC.test.lda)
 error.test.lda
 

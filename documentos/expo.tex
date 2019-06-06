@@ -16,8 +16,15 @@
 \mode<presentation>{\usetheme{Warsaw}}
 %\mode<presentation>{\usetheme{Madrid}}
 %% preamble
-\title{Detecci\'on de Diabetes Mellitus tipo II en la poblaci\'on femenina mexicana a trav\'es de modelos gr\'aficos probabilisticos}
-\author{Ricardo Cruz Sánchez}
+\title{Métodos multivariados de Análisis de Datos}
+\subtitle{Análisis de nutrientes en pizzas}
+
+\author{
+Ricardo Cruz Sánchez \\
+  \and
+Rolando Corona Jiménez
+}
+
 \institute[CIMAT]{CIMAT}
 
 
@@ -87,6 +94,58 @@ Prueba del modelo&&&&\cellcolor{blue}&\cellcolor{blue}\\ \hline
 Implementaci\'on del modelo&&&&&\cellcolor{blue}\\ \hline
 \end{tabular}
 
+\end{frame}
+
+\section{Modelos de reducción de dimensiones.}
+
+\subsection{Análisis de componentes principales (PCA)}
+
+\begin{frame}{Cargas de componentes principales}
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrr}
+  \hline
+ & PC1 & PC2 \\ 
+  \hline
+Humedad & 0.21 & 0.58 \\ 
+  Proteina & -0.47 & -0.03 \\ 
+  Grasa & -0.19 & 0.41 \\ 
+  Ceniza & -0.51 & 0.15 \\ 
+  Sodio & -0.47 & -0.02 \\ 
+  Carbohidratos & 0.32 & -0.49 \\ 
+  Calorias & -0.34 & -0.48 \\ 
+  Varianza acumulada & 48.64 \% &  83.59 \% \\ 
+\end{tabular}
+	\label{tabla:pesos_PCA}
+	\caption{Pesos asociados a las primeras dos componentes principales.}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+	\includegraphics[scale=.35]{images/varPCA.png} 
+	\label{i_var_PCA}
+	\caption{Varianza explicada por las componentes principales}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+	\includegraphics[scale=.35]{images/biplotPCA.png} 
+	\label{i_biplot_PCA}
+	\caption{Biplot PCA}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{titulo}
+\end{frame}
+
+\begin{frame}{titulo}
 \end{frame}
 
 \end{document}
