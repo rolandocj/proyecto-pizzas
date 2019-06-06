@@ -6,5 +6,10 @@
 \BOOKMARK [2][-]{subsection.3.2}{An\341lisis de factores}{section.3}% 6
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Interpretaci\363n}{subsection.3.2}% 7
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Representaci\363n gr\341fica \(biplot\)}{subsection.3.2}% 8
-\BOOKMARK [1][-]{section.4}{Modelos de clasificaci\363n.}{}% 9
-\BOOKMARK [1][-]{section.5}{Conclusiones.}{}% 10
+\BOOKMARK [1][-]{section.4}{An\341lisis por agrupaci\363n.}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Elecci\363n del n\372mero de clusters}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Asignaci\363n de clusters}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Modelos de clasificaci\363n.}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{LDA}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Multinomial}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Conclusiones.}{}% 15

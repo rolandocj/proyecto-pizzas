@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Resumen}{2}{0}{1}
+\beamer@sectionintoc {2}{Estado de investigaci\IeC {\'o}n}{3}{0}{2}
+\beamer@sectionintoc {3}{Proposito y objetivos}{4}{0}{3}
+\beamer@sectionintoc {4}{Plan de trabajo}{5}{0}{4}
+\beamer@sectionintoc {5}{Modelos de reducci\IeC {\'o}n de dimensiones.}{6}{0}{5}
+\beamer@subsectionintoc {5}{1}{An\IeC {\'a}lisis de componentes principales (PCA)}{6}{0}{5}

@@ -1,9 +1,10 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n.}{3}{section.1}
 \contentsline {section}{\numberline {2}An\IeC {\'a}lisis exploratorio.}{4}{section.2}
 \contentsline {section}{\numberline {3}Modelos de reducci\IeC {\'o}n de dimensiones.}{13}{section.3}
 \contentsline {subsection}{\numberline {3.1}An\IeC {\'a}lisis de componentes principales (PCA)}{13}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Representaci\IeC {\'o}n gr\IeC {\'a}fica (biplot)}{13}{subsubsection.3.1.1}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis de factores}{16}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Interpretaci\IeC {\'o}n}{16}{subsubsection.3.2.1}
@@ -31,3 +32,15 @@
 \contentsline {section}{\numberline {5}Conclusiones.}{17}{section.5}
 >>>>>>> Stashed changes
 >>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
+=======
+\contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis de factores}{16}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Interpretaci\IeC {\'o}n}{16}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Representaci\IeC {\'o}n gr\IeC {\'a}fica (biplot)}{17}{subsubsection.3.2.2}
+\contentsline {section}{\numberline {4}An\IeC {\'a}lisis por agrupaci\IeC {\'o}n.}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Elecci\IeC {\'o}n del n\IeC {\'u}mero de clusters}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Asignaci\IeC {\'o}n de clusters}{19}{subsection.4.2}
+\contentsline {section}{\numberline {5}Modelos de clasificaci\IeC {\'o}n.}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}LDA}{22}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Multinomial}{22}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conclusiones.}{22}{section.6}
+>>>>>>> Stashed changes
