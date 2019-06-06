@@ -47,22 +47,9 @@ Rolando Corona Jiménez
 %  \end{frame}
 %}
 
-\section{Resumen}
-
-\begin{frame}{Resumen}
-\begin{enumerate}
-\item primeros lugares en morbilidad y mortalidad a nivel mundial.
-\item la hiperglucemia causa alteraciones en el metabolismo de la glucosa y l\'ipidos.
-\item El padecimiento es cr\'onico-degenerativo
-\item Desde el a\~no 2000, la diabetes mellitus en M\'exico es la primera causa de muerte entre las mujeres y la segunda entre los hombres
-\item la edad, la obesidad, el sedentarismo, la alimentación inadecuada, los antecedentes familiares y algunos factores gen\'eticos
-\item detección temprana
-\item Incorporación de base de conocimiento en RB.
-\end{enumerate}
-\end{frame}
 
 
-\section{Proposito y objetivos}
+\section{Introducción}
 \begin{frame}{Proposito y objetivos}
 \begin{block}{Objetivo general}
 Generar un modelo confiable con el cual se pueda detectar de manera eficiente, econ\'omica y sencilla la presencia de DM2 en la población mexicana femenina.
@@ -76,6 +63,134 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \end{enumerate}
 \end{block}
 \end{frame}
+
+\section{Análisis exploratorio.}
+
+\begin{frame}
+\begin{itemize}
+\item \textbf{Ident:} Variable tipo numérica, la cual corresponde a un identificador para cada pizza.
+\item \textbf{HUMED:} Variable tipo numérica que indica el porcentaje de humedad contenido en la pizza.
+\item \textbf{PROTE:} Variable tipo numérica que indica la cantidad de gramos de proteina contenida en 100g de pizza.
+\item \textbf{GRASA:} Variable tipo numérica que indica la cantidad de gramos de grasa contenida en 100g de pizza.
+\item \textbf{CENIZA:} Variable tipo numérica que indica la cantidad de gramos de ceniza contenida en 100g de pizza.
+\item \textbf{SODIO:} Variable tipo numérica que indica la cantidad de gramos de sodio contenida en 100g de pizza.
+\item \textbf{CARBO:} Variable tipo numérica que indica la cantidad de gramos de carbohidratos contenida en 100g de pizza.
+\item \textbf{CALOR:} Variable tipo numérica que indica la cantidad de calorias contenida en 100g de pizza.
+\item \textbf{MARCA:} Varibale tipo string, la cual indica la marca que fabrico la pizza. Es una variable categórica.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/marca.png} 
+\label{i1}
+\caption{Conteo de registros por marca}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/ident.png} 
+\label{i2}
+\caption{Comportamiento de la variable Ident de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/humed.png} 
+\label{i3}
+\caption{Comportamiento de la variable Humed de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/prote.png} 
+\label{i4}
+\caption{Comportamiento de la variable Prote de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/grasa.png} 
+\label{i5}
+\caption{Comportamiento de la variable Grasa de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/ceniz.png} 
+\label{i6}
+\caption{Comportamiento de la variable CENIZ de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/sodio.png} 
+\label{i7}
+\caption{Comportamiento de la variable sodio de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/carbo.png} 
+\label{i8}
+\caption{Comportamiento de la variable Carbo de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/calor.png} 
+\label{i9}
+\caption{Comportamiento de la variable Calor de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/pgc.png} 
+\label{i10}
+\caption{Grasa+Proteina+Carbohidratos para cada observación}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/corr.png} 
+\label{i11}
+\caption{Correlación de las variables.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
 
 \section{Modelos de reducción de dimensiones.}
 
