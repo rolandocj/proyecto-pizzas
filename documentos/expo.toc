@@ -12,6 +12,7 @@
 \beamer@subsectionintoc {5}{1}{LDA}{34}{0}{5}
 \beamer@subsectionintoc {5}{2}{Multinomial}{36}{0}{5}
 \beamer@subsectionintoc {5}{3}{Validaci\IeC {\'o}n cruzada con caret}{38}{0}{5}
+<<<<<<< HEAD
 =======
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
 \beamer@sectionintoc {2}{An\IeC {\'a}lisis exploratorio.}{4}{0}{2}
@@ -26,3 +27,8 @@
 \beamer@subsectionintoc {5}{2}{Multinomial}{33}{0}{5}
 \beamer@subsectionintoc {5}{3}{Validaci\IeC {\'o}n cruzada con caret}{35}{0}{5}
 >>>>>>> Stashed changes
+=======
+\beamer@sectionintoc {6}{Regresi\IeC {\'o}n Multivariada}{40}{0}{6}
+\beamer@subsectionintoc {6}{1}{MANOVA}{41}{0}{6}
+\beamer@subsectionintoc {6}{2}{Regresi\IeC {\'o}n}{44}{0}{6}
+>>>>>>> develop
