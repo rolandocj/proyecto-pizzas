@@ -10,13 +10,10 @@
 \BOOKMARK [2][-]{subsection.4.1}{Elecci\363n del n\372mero de clusters}{section.4}% 10
 \BOOKMARK [2][-]{subsection.4.2}{Asignaci\363n de clusters}{section.4}% 11
 \BOOKMARK [1][-]{section.5}{Modelos de clasificaci\363n.}{}% 12
-<<<<<<< HEAD
-\BOOKMARK [1][-]{section.6}{Regresi\363n Multivariada}{}% 13
-\BOOKMARK [2][-]{subsection.6.1}{MANOVA}{section.6}% 14
-\BOOKMARK [2][-]{subsection.6.2}{Regresi\363n}{section.6}% 15
-\BOOKMARK [1][-]{section.7}{Conclusiones.}{}% 16
-=======
 \BOOKMARK [2][-]{subsection.5.1}{LDA}{section.5}% 13
 \BOOKMARK [2][-]{subsection.5.2}{Multinomial}{section.5}% 14
-\BOOKMARK [1][-]{section.6}{Conclusiones.}{}% 15
->>>>>>> 02886994131200f8e184a07292735ceb66ac6c2d
+\BOOKMARK [2][-]{subsection.5.3}{Validaci\363n cruzada con caret}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Regresi\363n Multivariada}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{MANOVA}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.2}{Regresi\363n}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Conclusiones.}{}% 19

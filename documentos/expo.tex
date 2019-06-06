@@ -50,19 +50,29 @@ Rolando Corona Jiménez
 
 
 \section{Introducción}
-\begin{frame}{Proposito y objetivos}
-\begin{block}{Objetivo general}
-Generar un modelo confiable con el cual se pueda detectar de manera eficiente, econ\'omica y sencilla la presencia de DM2 en la población mexicana femenina.
-\end{block}
-
-\begin{block}{objetivo secundario}
-\begin{enumerate}
-	\item Incorporar a la poblaci\'on masculina en el estudio.
-	\item Crear política públicas encaminadas a erradicar el padecimiento con base en los resultados generados por el modelo.
-	\item Disminuir los costos que se generan en los centros de salud causados por la detecci\'on tard\'ia de DM2
-\end{enumerate}
-\end{block}
+\begin{frame}{Bromatología}
+Ciencia encargada del análisis de los nutrientes contenidos en los alimentos. Los estudios relacionados con esta disciplina cobran importancia al considerar que existen cantidades recomendadas en la ingesta diaria de cualquier individuo y el incremento o decremento de las cantidades repercute directamente en la salud del la persona
 \end{frame}
+
+\begin{frame}{}
+\begin{itemize}
+
+\item Particularmente, la pizza, tiende a ser uno de los alimentos con los cuales se sobrepasan los límites de nutrientes recomendados\\
+\item En el presente trabajo, se considera una base de datos relativa a las pruebas nutrimentales realizadas en distintas pizzas y con base a estos datos se pretende realizar un análisis multivariado.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Repositorio}
+\begin{itemize}
+
+\item https://github.com/rolandocj/proyecto-pizzas/tree/develop
+\end{itemize}
+
+\end{frame}
+
+
 
 \section{Análisis exploratorio.}
 
@@ -83,7 +93,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/marca.png} 
+\includegraphics[scale=.65]{images/marca.png} 
 \label{i1}
 \caption{Conteo de registros por marca}
 \end{figure}
@@ -92,7 +102,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/ident.png} 
+\includegraphics[scale=.65]{images/ident.png} 
 \label{i2}
 \caption{Comportamiento de la variable Ident de acuerdo a la marca}
 \end{figure}
@@ -102,7 +112,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/humed.png} 
+\includegraphics[scale=.65]{images/humed.png} 
 \label{i3}
 \caption{Comportamiento de la variable Humed de acuerdo a la marca}
 \end{figure}
@@ -112,7 +122,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/prote.png} 
+\includegraphics[scale=.65]{images/prote.png} 
 \label{i4}
 \caption{Comportamiento de la variable Prote de acuerdo a la marca}
 \end{figure}
@@ -122,7 +132,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/grasa.png} 
+\includegraphics[scale=.65]{images/grasa.png} 
 \label{i5}
 \caption{Comportamiento de la variable Grasa de acuerdo a la marca}
 \end{figure}
@@ -132,7 +142,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/ceniz.png} 
+\includegraphics[scale=.65]{images/ceniz.png} 
 \label{i6}
 \caption{Comportamiento de la variable CENIZ de acuerdo a la marca}
 \end{figure}
@@ -142,7 +152,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/sodio.png} 
+\includegraphics[scale=.65]{images/sodio.png} 
 \label{i7}
 \caption{Comportamiento de la variable sodio de acuerdo a la marca}
 \end{figure}
@@ -151,7 +161,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/carbo.png} 
+\includegraphics[scale=.65]{images/carbo.png} 
 \label{i8}
 \caption{Comportamiento de la variable Carbo de acuerdo a la marca}
 \end{figure}
@@ -161,7 +171,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/calor.png} 
+\includegraphics[scale=.65]{images/calor.png} 
 \label{i9}
 \caption{Comportamiento de la variable Calor de acuerdo a la marca}
 \end{figure}
@@ -171,7 +181,7 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/pgc.png} 
+\includegraphics[scale=.65]{images/pgc.png} 
 \label{i10}
 \caption{Grasa+Proteina+Carbohidratos para cada observación}
 \end{figure}
@@ -179,18 +189,38 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 
 
 \begin{frame}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nutriente&Error promedio\\ \hline\hline
+Carbohidratos&1.37\\ \hline
+Grasas&0.68\\ \hline
+Proteina&0.04\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+
+\begin{frame}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{images/corr.png} 
+\includegraphics[scale=.65]{images/corr.png} 
 \label{i11}
 \caption{Correlación de las variables.}
 \end{figure}
 \end{frame}
 
+
 \begin{frame}
+\begin{itemize}
+\item La relación entre humedad y calorías, tal vez corresponda a la presencia del fosfato, pues la presencia de fosfato modifica el valor de estas dos variables y se encuentra en alimentos como el queso y carnes.\\
 
+\item La alta correlación entre Proteinas y cenizas puede ser explicado por la presencia de queso, pues es un alimento el cual es fuente de proteinas y minerales.\\
+
+\item En el caso de la alta correlación entre sodio y cenizas, puede ser explicado por la presencia de tomate, ya que, este alimento eleva el valor de ambas variables.\\
+\end{itemize}
 \end{frame}
-
 
 \section{Modelos de reducción de dimensiones.}
 
