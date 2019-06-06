@@ -88,6 +88,7 @@ pizzas.fa
 
 #resumen
 cbind(cargas, var.esp, comunalidades)
+xtable(cbind(cargas, var.esp, comunalidades))
 
 #hacer prueba para el numero de factores
 #el determinante es muy pequenio, como afecta esto a la prueba de hipotesis
