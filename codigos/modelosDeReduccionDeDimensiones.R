@@ -1,9 +1,13 @@
-### MODELOS DE REDUCCION DE DIMENSIONES
+### MODELOS DE REDUCCION DE DIMENSIONES Y CLUSTERING
 
 library(RCurl)
 library(ggfortify)
 library(ggrepel)
+#para determinar numero optimo de clusters
+library(factoextra)
+#para clustering jerarquico
 library(cluster)
+library(dendextend)
 library(xtable)
 
 #Carga de la base de datos
@@ -15,7 +19,7 @@ vars.num <- c("Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Cal
 
 
 #.+.+.+.+.+.+.+   FUNCIONES   .+.+.+.+.+.+.+#
-
+#funcion para graficas sobre pca
 pcaCharts <- function(x) {
   x.var <- x$sdev ^ 2
   x.pvar <- x.var/sum(x.var)
@@ -32,16 +36,12 @@ pcaCharts <- function(x) {
 
 pizzas.pca <- prcomp(pizzas[,vars.num], 
                      center = TRUE, scale = TRUE)
-pizzas.pca <- prcomp(pizzas[,vars.num], 
-                     center = TRUE, scale = FALSE)
-
-#pizzas.pca <- princomp(pizzas[,vars.num], cor = TRUE)
-plot(pizzas.pca$x[,1:2])
 
 #loadings
 pizzas.pca$rotation[,1:2]
 #varianza acumulada
 
+#graficas de varianza de pca
 pcaCharts(pizzas.pca)
 
 #grafica sencilla 
@@ -88,20 +88,15 @@ pizzas.fa
 
 #resumen
 cbind(cargas, var.esp, comunalidades)
-xtable(cbind(cargas, var.esp, comunalidades))
-
 
 #hacer prueba para el numero de factores
 #el determinante es muy pequenio, como afecta esto a la prueba de hipotesis
 det(cor(pizzas[,vars.num]))
-pizzas.fa
-
 
 #aproximapizzas.facion a la matriz de correlacion
 pred_vc <- cargas%*%t(cargas) + diag(var.esp)
 pizzas.fa$correlation
 round(cor(pizzas[,vars.num]) - pred_vc,digits=3)
-xtable(round(cor(pizzas[,vars.num]) - pred_vc,digits=3))
 
 #### Calculo de centroides ####
 medias.fa <- aggregate(pizzas.fa$scores, by= list(pizzas$Marca), FUN=mean)
@@ -119,41 +114,32 @@ autoplot(pizzas.fa, data = pizzas, alpha = 1, scale = 0,
   theme(plot.title = element_text(hjust = 0.5))+
   labs(title = "Análisis factorial")
 
-
 #.+.+.+.+.+.+.+   CLUSTERING   .+.+.+.+.+.+.+#
 
-
 #### Seleccion de numero de clusters  ####
-## usando fpc
-library(fpc)
-?pamk
-pamk.best <- pamk(pizzas[,vars.num])
-pamk.best
-plot(pam(pizzas[,vars.num], pamk.best$nc))
+#usando factoextra
 
-## usando NbClust
-#install.packages("NbClust")
-library("NbClust")
-?NbClust
-nbc <- NbClust(data = pizzas[,vars.num], diss = NULL, distance = "euclidean",
-        min.nc = 2, max.nc = 7, method = c("kmeans"))
-cluster <- as.factor(nbc$Best.partition)
+# wss method
+fviz_nbclust(pizzas[,vars.num], hcut, method = "wss") +
+  geom_vline(xintercept = 5, linetype = 2)+
+  labs(subtitle = "Elbow method")
 
+# Silhouette method
+fviz_nbclust(pizzas[,vars.num], hcut, method = "silhouette")+
+  labs(subtitle = "Silhouette method")
 
-#### Clustering  ####
-#la variable "cluster" tiene el etiquetado de los datos
-#y es el que se usa para la representacion grafica en 2d
+#### Clustering jerarquico ####
+#numero de clusters
+k <- 5
+X <- pizzas[,vars.num]
 
+#se calculan las distancias
+d <- dist(X, method = "euclidean")
 
-n.clusters <- 5
-
-#kmeans
-pizzas.km <- kmeans(pizzas[,vars.num], n.clusters)
-cluster <- as.factor(pizzas.km$cluster)
-
-#fuzzy means
-pizzas.km <- fanny(pizzas[,vars.num], n.clusters)
-cluster <- as.factor(pizzas.km$clustering)
+#complete
+hclus1 <- agnes(d,diss=TRUE,method="complete")
+dend1 <- as.dendrogram(hclus1,hang=-1)
+cluster <- as.factor(cutree(dend1, k))
 
 #### Visualizacion  ####
 
@@ -171,7 +157,7 @@ autoplot(pizzas.pca, data = data.frame(pizzas, cluster), alpha = 1, scale = 0,
             size = 2, vjust=-1,
             check_overlap = TRUE) +
   theme(plot.title = element_text(hjust = 0.5))+
-  labs(title="Clustering", subtitle = "Componentes principales")
+  labs(title="Clustering jeráquico completo", subtitle = "Componentes principales")
 
 #visualzacion del clustering en 2 factores
 autoplot(pizzas.fa, data = data.frame(pizzas, cluster), alpha = 1, scale = 0,
@@ -187,4 +173,4 @@ autoplot(pizzas.fa, data = data.frame(pizzas, cluster), alpha = 1, scale = 0,
             size = 2, vjust=-1,
             check_overlap = TRUE) +
   theme(plot.title = element_text(hjust = 0.5))+
-  labs(title="Clustering", subtitle = "Dos factores")
+  labs(title="Clustering jeráquico completo", subtitle = "Dos factores")

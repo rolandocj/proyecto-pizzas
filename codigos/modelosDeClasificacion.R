@@ -42,7 +42,12 @@ error.test.lda  <- 1-sum(diag(MC.test.lda))/sum(MC.test.lda)
 error.test.lda
 
 #.+.+.+.+.+.+.+   MULTILOGIT   .+.+.+.+.+.+.+#
+<<<<<<< HEAD
 pizzas.log <- multinom(Marca ~ ., data = pizzas, MaxNWts = 1500)
+=======
+pizzas.log <- multinom(Marca ~ ., data = pizzas.train, MaxNWts = 1500)
+pizzas.log
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 summary(pizzas.log)
 #confint(pizzas.log)
 
