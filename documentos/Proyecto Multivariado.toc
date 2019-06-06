@@ -12,7 +12,15 @@
 \contentsline {section}{\numberline {3}Modelos de reducci\IeC {\'o}n de dimensiones.}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}An\IeC {\'a}lisis de componentes principales (PCA)}{12}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Representaci\IeC {\'o}n gr\IeC {\'a}fica (biplot)}{12}{subsubsection.3.1.1}
+<<<<<<< Updated upstream
 \contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis de factores}{12}{subsection.3.2}
 \contentsline {section}{\numberline {4}Modelos de clasificaci\IeC {\'o}n.}{12}{section.4}
 \contentsline {section}{\numberline {5}Conclusiones.}{12}{section.5}
 >>>>>>> 32f29a96c9b9da24efe37d15a5c90148c5ad1a46
+=======
+\contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis de factores}{15}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Interpretaci\IeC {\'o}n}{15}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Representaci\IeC {\'o}n gr\IeC {\'a}fica (biplot)}{16}{subsubsection.3.2.2}
+\contentsline {section}{\numberline {4}Modelos de clasificaci\IeC {\'o}n.}{17}{section.4}
+\contentsline {section}{\numberline {5}Conclusiones.}{17}{section.5}
+>>>>>>> Stashed changes
