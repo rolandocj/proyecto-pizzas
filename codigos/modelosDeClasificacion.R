@@ -15,9 +15,11 @@ vars.num <- c("Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Cal
 
 #variables usadas para lda
 set.seed(123)
-muestra.train <- sample(1:nrow(pizzas), nrow(pizzas)/2)
+muestra.train <- sample(1:nrow(pizzas), nrow(pizzas)*(1/2))
 muestra.test <- setdiff(1:nrow(pizzas), muestra.train)
 
+table(pizzas$Marca[muestra.train])
+table(pizzas$Marca[muestra.test])
 #datasets para train y test, considerar usar otra forma de validación
 pizzas.train <- data.frame(pizzas[muestra.train,vars.num], Marca = Marca[muestra.train])
 pizzas.test <- data.frame(pizzas[muestra.test,vars.num], Marca =  Marca[muestra.test])
@@ -42,12 +44,11 @@ error.test.lda  <- 1-sum(diag(MC.test.lda))/sum(MC.test.lda)
 error.test.lda
 
 #.+.+.+.+.+.+.+   MULTILOGIT   .+.+.+.+.+.+.+#
-<<<<<<< HEAD
+
 pizzas.log <- multinom(Marca ~ ., data = pizzas, MaxNWts = 1500)
-=======
+
 pizzas.log <- multinom(Marca ~ ., data = pizzas.train, MaxNWts = 1500)
 pizzas.log
->>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 summary(pizzas.log)
 #confint(pizzas.log)
 
@@ -65,9 +66,6 @@ MC.test.log <- table(pizzas.test$Marca,pizzas.test.pred.log)
 MC.test.log
 error.test.log  <- 1-sum(diag(MC.test.log))/sum(MC.test.log)
 error.test.log
-
-
-
 
 
 
