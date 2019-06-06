@@ -21,8 +21,8 @@ MARCA_JG<-c(rep("J",length(which(Marca=="J"))),
           rep("G",length(which(Marca=="G"))))
 PIZ_JG<-cbind(pizzas[JG,-c(1,9)],MARCA_JG)
 manova_JG<-manova(as.matrix(pizzas[JG,-c(1,9)])~MARCA_JG,data=PIZ_JG)
-summary.aov(manova)
-summary(manova)
+summary.aov(manova_JG)
+summary(manova_JG)
 
 
 
@@ -35,4 +35,8 @@ nonutrientes<-as.matrix(nonutrientes)
 nutrientes<-as.matrix(nutrientes)
 
 reg_mult<-lm(nonutrientes~nutrientes)
-summary(reg_mult)
+  summary(reg_mult)
+
+  reg_mult2<-lm(nonutrientes~nutrientes[,-2])
+  summary(reg_mult2)
+  

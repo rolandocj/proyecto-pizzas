@@ -278,6 +278,30 @@ En el caso de la alta correlación entre sodio y cenizas, puede ser explicado po
 \input{analisis-agrupacion} 
 \section{Modelos de clasificación.}
 
+\pagebreak
+\section{Regresión Multivariada}
+\subsection{MANOVA}
+El análisis de varianza múltiple tiene como objetivo comparar si los valores de un conjunto de datos numéricos son significativamente distintos al separarlos por clases.\\
+
+En este caso, la variable que distingue que clases es Marca, la cual tiene 12 categorias y esperamos contrastar la hipotesis nula $H_0:\mu_1=\hdots=\mu_12$, es decir, que la media de todas las categorías es igual, contra la hipotesis alternativa que existe al menos un par de categorías en las cuales las medias no son iguales.\\
+
+Antes de realizar esta prueba, se realiza el ANOVA para cada una de las 8 variables numéricas con una hipotesis similar pero en una sola variable. En las 8 pruebas ANOVA se rechazó la hipotesis nula.\\
+
+De la misma manera se rechaza la hipotesis nula para MANOVA. Lo cual implica que existen al menos dos categorías con medias iguales considerando todas las variables.\\
+
+El proceso para comprobar la hipotesis alternativa sería tomar los $2^{k-1}$ subconjuntos y realizar la prueba MANOVA.\\
+
+Ejemplo de esto, podría ser el subconjunto que solo posee la categoría $J$ y $G$. Realizando ANOVA por variables, se obtiene no existe evidencia suficiente para rechazar que las medias son iguales considerando las variables Humedad, Proteina, Calorias y Carbohidratos por separado y aun nivel de significancia del .05.\\
+
+Sin embargo, al ejecutar el MANOVA para solo estas dos clases, se rechaza la hipotesis que sus medias sean iguales.
+
+\subsection{Regresión}
+Para ejecutar la Regresión Multivariada, se consideraron como variables regresoras a aquellas que son nutrientes, a saber, Proteinas, Grasas, Sodio y Carbohidratos. Mientras que las variables dependientes serán Humedad, Cenizas y Calorias.\\
+
+Para las 3 variables dependientes, se encontró que la variables Grasa no es significativa para el modelo. Por lo tanto, se elimina del modelo.\\
+
+Con esto se consiguen estadisticos de $R^2$ de $0.96$, $0.94$ y $0.93$ para las respectivas variables dependientes, lo cual era de esperarse, pues en la figura 11, se aprecia como las variables dependientes están muy correlacionadas con las variables regresoras.
+
 \section{Conclusiones.}
 
 
