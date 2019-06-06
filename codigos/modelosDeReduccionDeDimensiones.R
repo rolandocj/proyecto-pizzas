@@ -1,9 +1,13 @@
-### MODELOS DE REDUCCION DE DIMENSIONES
+### MODELOS DE REDUCCION DE DIMENSIONES Y CLUSTERING
 
 library(RCurl)
 library(ggfortify)
 library(ggrepel)
+#para determinar numero optimo de clusters
+library(factoextra)
+#para clustering jerarquico
 library(cluster)
+library(dendextend)
 library(xtable)
 
 #Carga de la base de datos
@@ -15,7 +19,7 @@ vars.num <- c("Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Cal
 
 
 #.+.+.+.+.+.+.+   FUNCIONES   .+.+.+.+.+.+.+#
-
+#funcion para graficas sobre pca
 pcaCharts <- function(x) {
   x.var <- x$sdev ^ 2
   x.pvar <- x.var/sum(x.var)
@@ -32,16 +36,12 @@ pcaCharts <- function(x) {
 
 pizzas.pca <- prcomp(pizzas[,vars.num], 
                      center = TRUE, scale = TRUE)
-pizzas.pca <- prcomp(pizzas[,vars.num], 
-                     center = TRUE, scale = FALSE)
-
-#pizzas.pca <- princomp(pizzas[,vars.num], cor = TRUE)
-plot(pizzas.pca$x[,1:2])
 
 #loadings
 pizzas.pca$rotation[,1:2]
 #varianza acumulada
 
+#graficas de varianza de pca
 pcaCharts(pizzas.pca)
 
 #grafica sencilla 
@@ -88,20 +88,15 @@ pizzas.fa
 
 #resumen
 cbind(cargas, var.esp, comunalidades)
-xtable(cbind(cargas, var.esp, comunalidades))
-
 
 #hacer prueba para el numero de factores
 #el determinante es muy pequenio, como afecta esto a la prueba de hipotesis
 det(cor(pizzas[,vars.num]))
-pizzas.fa
-
 
 #aproximapizzas.facion a la matriz de correlacion
 pred_vc <- cargas%*%t(cargas) + diag(var.esp)
 pizzas.fa$correlation
 round(cor(pizzas[,vars.num]) - pred_vc,digits=3)
-xtable(round(cor(pizzas[,vars.num]) - pred_vc,digits=3))
 
 #### Calculo de centroides ####
 medias.fa <- aggregate(pizzas.fa$scores, by= list(pizzas$Marca), FUN=mean)
@@ -119,7 +114,6 @@ autoplot(pizzas.fa, data = pizzas, alpha = 1, scale = 0,
   theme(plot.title = element_text(hjust = 0.5))+
   labs(title = "Análisis factorial")
 
-
 #.+.+.+.+.+.+.+   CLUSTERING   .+.+.+.+.+.+.+#
 
 
@@ -134,13 +128,72 @@ plot(pam(pizzas[,vars.num], pamk.best$nc))
 ## usando NbClust
 #install.packages("NbClust")
 library("NbClust")
+###########
+fviz_nbclust
+fviz_nbclust(pizzas[,vars.num], kmeans, method = "wss") +
+  geom_vline(xintercept = 5, linetype = 2)+
+  labs(subtitle = "Elbow method")
+
+
+fviz_nbclust(pizzas[,vars.num], hcut, method = "wss") +
+  geom_vline(xintercept = 5, linetype = 2)+
+  labs(subtitle = "Elbow method")
+?fviz_nbclust
+
+# Silhouette method
+fviz_nbclust(pizzas[,vars.num], hcut, method = "silhouette")+
+  labs(subtitle = "Silhouette method")
+##########
 ?NbClust
 nbc <- NbClust(data = pizzas[,vars.num], diss = NULL, distance = "euclidean",
         min.nc = 2, max.nc = 7, method = c("kmeans"))
+
+nbc2 <- NbClust(data = pizzas[,vars.num], diss = NULL, distance = "euclidean", 
+        min.nc = 3, max.nc = 6, method = "complete", index = "alllong")
+
+nbc$Best.nc
+nbc$Best.nc[1,]
+hist(nbc$Best.nc[1,])
+hist(nbc$Best.nc)
 cluster <- as.factor(nbc$Best.partition)
 
-
+?NbClust
 #### Clustering  ####
+#################################
+### Clustering jerarquico ###
+
+k <- 5
+X <- pizzas[,vars.num]
+d <- dist(X, method = "euclidean")
+
+#complete
+hclus1 <- agnes(d,diss=TRUE,method="complete")
+dend1 <- as.dendrogram(hclus1,hang=-1)
+cluster.j1 <- as.factor(cutree(dend1, k))
+plot(X, col = cluster.j1, main = "Clustering jerárquico (complete)")
+cluster <- cluster.j1
+colores <- rainbow(12)
+
+colors.dend <- colores[as.numeric(pizzas$Marca)]
+cols <- colors.dend[order.dendrogram(dend1)]
+labels_colors(dend1) <- as.numeric(cols)
+
+d1 <- color_branches(dend1,k=k,groupLabels=FALSE)
+plot(d1,main=paste("Single (euclidean)\n",paste("k=",k)))
+
+#average
+hclus2<- agnes(d,diss=TRUE,method="average")
+dend2 <- as.dendrogram(hclus2,hang=-1)
+cluster.j2 <- as.factor(cutree(dend2, k))
+plot(X, col = cluster.j2, main = "Clustering jerárquico (average)")
+
+#single
+hclus3 <- agnes(d,diss=TRUE,method="single")
+dend3 <- as.dendrogram(hclus3,hang=-1)
+cluster.j3 <- as.factor(cutree(dend3, k))
+plot(X, col = cluster.j3, main = "Clustering jerárquico (single)")
+
+################################
 #la variable "cluster" tiene el etiquetado de los datos
 #y es el que se usa para la representacion grafica en 2d
 
@@ -151,6 +204,7 @@ n.clusters <- 5
 pizzas.km <- kmeans(pizzas[,vars.num], n.clusters)
 cluster <- as.factor(pizzas.km$cluster)
 
+?kmeans
 #fuzzy means
 pizzas.km <- fanny(pizzas[,vars.num], n.clusters)
 cluster <- as.factor(pizzas.km$clustering)
