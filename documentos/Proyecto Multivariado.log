@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  6 JUN 2019 03:54
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  6 JUN 2019 00:41
@@ -15,6 +18,7 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Debian) (preloaded
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Debian) (preloaded format=pdflatex 2019.2.12)  6 JUN 2019 00:19
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,6 +1302,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
+<<<<<<< HEAD
+<images/corr.png, id=131, 383.93437pt x 237.13594pt>
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 <images/corr.png, id=121, 383.93437pt x 237.13594pt>
@@ -1315,9 +1322,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 =======
 <images/corr.png, id=124, 383.93437pt x 237.13594pt>
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 File: images/corr.png Graphic file (type png)
  <use images/corr.png>
-Package pdftex.def Info: images/corr.png used on input line 273.
+Package pdftex.def Info: images/corr.png used on input line 271.
 (pdftex.def)             Requested size: 383.93343pt x 237.13535pt.
 
 
@@ -1378,10 +1386,12 @@ l.2 \restoregeometry
                      <./images/corr.png (PNG copy)>]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 9.
 
-<<<<<<< HEAD
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+<<<<<<< HEAD
+<images/varPCA.png, id=160, 639.13782pt x 551.81157pt>
+=======
 <images/varPCA.png, id=150, 639.13782pt x 551.81157pt>
 =======
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1399,6 +1409,7 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 =======
 <images/varPCA.png, id=156, 639.13782pt x 551.81157pt>
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 File: images/varPCA.png Graphic file (type png)
  <use images/varPCA.png>
 Package pdftex.def Info: images/varPCA.png used on input line 34.
@@ -1407,9 +1418,13 @@ Package pdftex.def Info: images/varPCA.png used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
+<images/biplotPCA.png, id=162, 602.25pt x 519.44063pt>
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 <images/biplotPCA.png, id=152, 602.25pt x 519.44063pt>
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 File: images/biplotPCA.png Graphic file (type png)
 
 <use images/biplotPCA.png>
@@ -1419,6 +1434,9 @@ Package pdftex.def Info: images/biplotPCA.png used on input line 47.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
+[13
+=======
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
  [13
@@ -1431,9 +1449,18 @@ File: images/biplotPCA.png Graphic file (type png)
 <use images/biplotPCA.png>
 Package pdftex.def Info: images/biplotPCA.png  used on input line 47.
 (pdftex.def)             Requested size: 451.68639pt x 389.57951pt.
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
 
+<<<<<<< HEAD
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.53 \restoregeometry
+                     ] [14pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.12}) has been already used, duplicate ignored
+=======
 <<<<<<< Updated upstream
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
@@ -1442,12 +1469,30 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
 =======
 [12
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.53 \restoregeometry
+                      <./images/varPCA.png (PNG copy)>] [15pdfTeX warning (ext4
+): destination with the same identifier (name{figure.13}) has been already used
+, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.53 \restoregeometry
+                      <./images/biplotPCA.png (PNG copy)>] [16
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
+<<<<<<< HEAD
+l.103 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 l.288 \end{document}
@@ -1457,21 +1502,29 @@ l.260 \end{document}
                     ] [13pdfTeX warning (ext4): destination with the same ident
 >>>>>>> 32f29a96c9b9da24efe37d15a5c90148c5ad1a46
 ifier (name{figure.12}) has been already used, duplicate ignored
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.103 
+      ] <images/biplotFactores.png, id=196, 602.25pt x 519.44063pt>
+File: images/biplotFactores.png Graphic file (type png)
+
+<use images/biplotFactores.png>
+Package pdftex.def Info: images/biplotFactores.png used on input line 110.
+(pdftex.def)             Requested size: 451.68639pt x 389.57951pt.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 <<<<<<< HEAD
-l.288 \end{document}
-                     <./images/varPCA.png (PNG copy)>] [15pdfTeX warning (ext4)
+l.286 \end{document}
+                     <./images/biplotFactores.png (PNG copy)>] [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
 =======
-l.260 \end{document}
-                     <./images/varPCA.png (PNG copy)>] [14pdfTeX warning (ext4)
->>>>>>> 32f29a96c9b9da24efe37d15a5c90148c5ad1a46
-: destination with the same identifier (name{figure.13}) has been already used,
- duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
 l.288 \end{document}
                      <./images/biplotPCA.png (PNG copy)>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
@@ -1521,15 +1574,20 @@ l.260 \end{document}
                      <./images/biplotFactores.png (PNG copy)>] [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 
 (./Proyecto Multivariado.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
 Package rerunfilecheck Info: File `"Proyecto Multivariado".out' has not changed
 .
+<<<<<<< HEAD
+(rerunfilecheck)             Checksum: 15EE6B6B103D677232634AF44D82A493;736.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 (rerunfilecheck)             Checksum: C2330CADB4AA20349B61EF0CF6DD3E6B;561.
@@ -1544,19 +1602,37 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
 (rerunfilecheck)             Checksum: 73ED60A7EC4CC4A1B34543AADBFF2A75;296.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
 >>>>>>> 32f29a96c9b9da24efe37d15a5c90148c5ad1a46
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
  ) 
 Here is how much of TeX's memory you used:
- 12490 strings out of 493013
- 179686 string characters out of 6136993
- 344489 words of memory out of 5000000
- 15725 multiletter control sequences out of 15000+600000
+ 12508 strings out of 493013
+ 180002 string characters out of 6136993
+ 345661 words of memory out of 5000000
+ 15734 multiletter control sequences out of 15000+600000
  18124 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,9n,37p,2012b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-<<<<<<< HEAD
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist
+<<<<<<< HEAD
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+fbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
+b><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texl
+ive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2016/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2016/texmf-dist/
+fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2016/texmf-dist/fonts/type
+1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
+m-super/sftt1200.pfb>
+Output written on "Proyecto Multivariado.pdf" (18 pages, 481033 bytes).
+PDF statistics:
+ 262 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
 /fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/typ
 e1/public/cm-super/sfbx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/
 cm-super/sfbx1728.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
@@ -1636,4 +1712,5 @@ PDF statistics:
  46 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 >>>>>>> Stashed changes
+>>>>>>> a6dae224afcdea58ae6408a746c4c153273dce9f
 
