@@ -4,6 +4,7 @@ library(RCurl)
 library(ggfortify)
 library(ggrepel)
 library(cluster)
+library(xtable)
 
 #Carga de la base de datos
 url<-"https://raw.githubusercontent.com/rolandocj/proyecto-pizzas/develop/codigos/preprocesamientoDeDatos.R"
@@ -13,22 +14,35 @@ source(url)
 vars.num <- c("Humedad","Proteina","Grasa","Ceniza","Sodio","Carbohidratos","Calorias")
 
 
+#.+.+.+.+.+.+.+   FUNCIONES   .+.+.+.+.+.+.+#
+
+pcaCharts <- function(x) {
+  x.var <- x$sdev ^ 2
+  x.pvar <- x.var/sum(x.var)
+  print("proportions of variance:")
+  print(x.pvar)
+  
+  par(mfrow=c(2,1))
+  plot(x.pvar,xlab="Componente principal", ylab="Proporción de varianza explicada", ylim=c(0,1), type='b')
+  plot(cumsum(x.pvar),xlab="Componente principal", ylab="Proporcion de varianza explicada acumulada", ylim=c(0,1), type='b')
+  par(mfrow=c(1,1))
+}
+
 #.+.+.+.+.+.+.+   PCA   .+.+.+.+.+.+.+#
 
 pizzas.pca <- prcomp(pizzas[,vars.num], 
                      center = TRUE, scale = TRUE)
+pizzas.pca <- prcomp(pizzas[,vars.num], 
+                     center = TRUE, scale = FALSE)
 
 #pizzas.pca <- princomp(pizzas[,vars.num], cor = TRUE)
 plot(pizzas.pca$x[,1:2])
 
-#screplot
-screeplot(pizzas.pca)
-
 #loadings
 pizzas.pca$rotation[,1:2]
-
 #varianza acumulada
 
+pcaCharts(pizzas.pca)
 
 #grafica sencilla 
 ggplot() +
@@ -54,13 +68,17 @@ autoplot(pizzas.pca, data = pizzas, alpha = 1, scale = 0,
   labs(title="PCA con datos normalizados")
 
 
+
 #.+.+.+.+.+.+.+   ANALISIS FACTORIAL   .+.+.+.+.+.+.+#
 n.factores <- 2
+
+#agregar prueba de esfericidad 
+
 #promax
 pizzas.fa <- factanal(x = pizzas[,vars.num],factors = n.factores,scores="Bartlett",
                       rotation = "promax")
 #varimax
-pizzas.fa <- factanal(x = pizzas[,vars.fa],factors = n.factores,scores="Bartlett")
+pizzas.fa <- factanal(x = pizzas[,vars.num],factors = n.factores,scores="Bartlett")
 pizzas.fa
 
 #hacer una tabla con comunalidades y varianzas especificas
@@ -68,8 +86,14 @@ pizzas.fa
 (var.esp <- pizzas.fa$uniquenesses) # Singularidades
 (comunalidades <- diag(cargas %*% t(cargas)))
 
+#resumen
 cbind(cargas, var.esp, comunalidades)
+
+#hacer prueba para el numero de factores
+#el determinante es muy pequenio, como afecta esto a la prueba de hipotesis
+det(cor(pizzas[,vars.num]))
 pizzas.fa
+
 
 #aproximapizzas.facion a la matriz de correlacion
 pred_vc <- cargas%*%t(cargas) + diag(var.esp)

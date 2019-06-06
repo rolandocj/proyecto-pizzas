@@ -1,6 +1,8 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n.}{3}{section.1}
 \contentsline {section}{\numberline {2}An\IeC {\'a}lisis exploratorio.}{4}{section.2}
-\contentsline {section}{\numberline {3}Modelos de reducci\IeC {\'o}n de dimensiones.}{7}{section.3}
-\contentsline {section}{\numberline {4}Modelos de clasificaci\IeC {\'o}n.}{7}{section.4}
-\contentsline {section}{\numberline {5}Conclusiones.}{7}{section.5}
+\contentsline {section}{\numberline {3}Modelos de reducci\IeC {\'o}n de dimensiones.}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}An\IeC {\'a}lisis de componentes principales (PCA)}{12}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Representaci\IeC {\'o}n gr\IeC {\'a}fica (biplot)}{13}{subsubsection.3.1.1}
+\contentsline {section}{\numberline {4}Modelos de clasificaci\IeC {\'o}n.}{13}{section.4}
+\contentsline {section}{\numberline {5}Conclusiones.}{13}{section.5}
