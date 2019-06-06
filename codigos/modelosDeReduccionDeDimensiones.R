@@ -88,6 +88,8 @@ pizzas.fa
 
 #resumen
 cbind(cargas, var.esp, comunalidades)
+xtable(cbind(cargas, var.esp, comunalidades))
+
 
 #hacer prueba para el numero de factores
 #el determinante es muy pequenio, como afecta esto a la prueba de hipotesis
@@ -99,6 +101,7 @@ pizzas.fa
 pred_vc <- cargas%*%t(cargas) + diag(var.esp)
 pizzas.fa$correlation
 round(cor(pizzas[,vars.num]) - pred_vc,digits=3)
+xtable(round(cor(pizzas[,vars.num]) - pred_vc,digits=3))
 
 #### Calculo de centroides ####
 medias.fa <- aggregate(pizzas.fa$scores, by= list(pizzas$Marca), FUN=mean)
