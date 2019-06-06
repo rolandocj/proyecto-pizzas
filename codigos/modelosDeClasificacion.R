@@ -43,6 +43,7 @@ error.test.lda
 
 #.+.+.+.+.+.+.+   MULTILOGIT   .+.+.+.+.+.+.+#
 pizzas.log <- multinom(Marca ~ ., data = pizzas.train, MaxNWts = 1500)
+pizzas.log
 summary(pizzas.log)
 #confint(pizzas.log)
 
