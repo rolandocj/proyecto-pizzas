@@ -27,6 +27,11 @@ Rolando Corona Jiménez
 
 \institute[CIMAT]{CIMAT}
 
+\AtBeginSection[]{%
+\begin{frame}
+    \tableofcontents[currentsection, subsectionstyle=show/show/hide]
+\end{frame}
+}
 
 \begin{document}
 
@@ -42,22 +47,9 @@ Rolando Corona Jiménez
 %  \end{frame}
 %}
 
-\section{Resumen}
-
-\begin{frame}{Resumen}
-\begin{enumerate}
-\item primeros lugares en morbilidad y mortalidad a nivel mundial.
-\item la hiperglucemia causa alteraciones en el metabolismo de la glucosa y l\'ipidos.
-\item El padecimiento es cr\'onico-degenerativo
-\item Desde el a\~no 2000, la diabetes mellitus en M\'exico es la primera causa de muerte entre las mujeres y la segunda entre los hombres
-\item la edad, la obesidad, el sedentarismo, la alimentación inadecuada, los antecedentes familiares y algunos factores gen\'eticos
-\item detección temprana
-\item Incorporación de base de conocimiento en RB.
-\end{enumerate}
-\end{frame}
 
 
-\section{Proposito y objetivos}
+\section{Introducción}
 \begin{frame}{Proposito y objetivos}
 \begin{block}{Objetivo general}
 Generar un modelo confiable con el cual se pueda detectar de manera eficiente, econ\'omica y sencilla la presencia de DM2 en la población mexicana femenina.
@@ -71,6 +63,134 @@ Generar un modelo confiable con el cual se pueda detectar de manera eficiente, e
 \end{enumerate}
 \end{block}
 \end{frame}
+
+\section{Análisis exploratorio.}
+
+\begin{frame}
+\begin{itemize}
+\item \textbf{Ident:} Variable tipo numérica, la cual corresponde a un identificador para cada pizza.
+\item \textbf{HUMED:} Variable tipo numérica que indica el porcentaje de humedad contenido en la pizza.
+\item \textbf{PROTE:} Variable tipo numérica que indica la cantidad de gramos de proteina contenida en 100g de pizza.
+\item \textbf{GRASA:} Variable tipo numérica que indica la cantidad de gramos de grasa contenida en 100g de pizza.
+\item \textbf{CENIZA:} Variable tipo numérica que indica la cantidad de gramos de ceniza contenida en 100g de pizza.
+\item \textbf{SODIO:} Variable tipo numérica que indica la cantidad de gramos de sodio contenida en 100g de pizza.
+\item \textbf{CARBO:} Variable tipo numérica que indica la cantidad de gramos de carbohidratos contenida en 100g de pizza.
+\item \textbf{CALOR:} Variable tipo numérica que indica la cantidad de calorias contenida en 100g de pizza.
+\item \textbf{MARCA:} Varibale tipo string, la cual indica la marca que fabrico la pizza. Es una variable categórica.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/marca.png} 
+\label{i1}
+\caption{Conteo de registros por marca}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/ident.png} 
+\label{i2}
+\caption{Comportamiento de la variable Ident de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/humed.png} 
+\label{i3}
+\caption{Comportamiento de la variable Humed de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/prote.png} 
+\label{i4}
+\caption{Comportamiento de la variable Prote de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/grasa.png} 
+\label{i5}
+\caption{Comportamiento de la variable Grasa de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/ceniz.png} 
+\label{i6}
+\caption{Comportamiento de la variable CENIZ de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/sodio.png} 
+\label{i7}
+\caption{Comportamiento de la variable sodio de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/carbo.png} 
+\label{i8}
+\caption{Comportamiento de la variable Carbo de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/calor.png} 
+\label{i9}
+\caption{Comportamiento de la variable Calor de acuerdo a la marca}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/pgc.png} 
+\label{i10}
+\caption{Grasa+Proteina+Carbohidratos para cada observación}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{images/corr.png} 
+\label{i11}
+\caption{Correlación de las variables.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
 
 \section{Modelos de reducción de dimensiones.}
 
@@ -220,8 +340,153 @@ Humedad & -0.00 & -0.02 & 0.00 & -0.00 & 0.01 & -0.00 & -0.00 \\
 \end{frame}
 
 
+\section{Modelos de clasificación.}
+\subsection{LDA}
 \begin{frame}
+
+\begin{table}[ht]
+\begin{adjustbox}{width= 3.5in,center}
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & A & B & C & D & E & F & G & H & I & J & K & L \\ 
+  \hline
+A &   9 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  B &   0 &  17 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  C &   0 &   0 &  15 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  D &   0 &   0 &   1 &  19 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  E &   0 &   0 &   0 &   0 &  14 &   2 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  F &   0 &   0 &   0 &   0 &   1 &  16 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  G &   0 &   0 &   0 &   0 &   0 &   0 &  12 &   0 &   0 &   0 &   0 &   0 \\ 
+  H &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   8 &   9 &   0 &   0 &   0 \\ 
+  I &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   2 &  14 &   1 &   0 &   0 \\ 
+  J &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  13 &   0 &   0 \\ 
+  K &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  18 &   0 \\ 
+  L &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  18 \\ 
+   \hline
+\end{tabular}
+\end{adjustbox}
+	\label{tabla:confusionLDAtrain}
+	\caption{Matriz de confusión LDA train}
+\end{table}
+
+error de clasificación:  0.08465608
+\end{frame}
+
+\begin{frame}
+ \begin{table}[ht]
+ \begin{adjustbox}{width= 3.5in,center}
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & A & B & C & D & E & F & G & H & I & J & K & L \\ 
+  \hline
+A &  21 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  B &   0 &  14 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  C &   0 &   0 &  15 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  D &   0 &   0 &   1 &  12 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  E &   0 &   0 &   0 &   0 &  14 &   1 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  F &   0 &   0 &   0 &   0 &   0 &  19 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  G &   0 &   0 &   0 &   0 &   0 &   0 &  19 &   0 &   0 &   0 &   0 &   0 \\ 
+  H &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  11 &   4 &   0 &   0 &   0 \\ 
+  I &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  13 &   0 &   0 &   0 \\ 
+  J &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  20 &   0 &   0 \\ 
+  K &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  12 &   0 \\ 
+  L &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  14 \\ 
+   \hline
+\end{tabular}
+\end{adjustbox}
+	\label{tabla:confusionLDAtest}
+	\caption{Matriz de confusión LDA test}
+\end{table}
+error de clasificación: 0.03157895
+\end{frame}
+
+\subsection{Multinomial}
+
+
+\begin{frame}
+\begin{table}[ht]
+\begin{adjustbox}{width= 3.5in,center}
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & A & B & C & D & E & F & G & H & I & J & K & L \\ 
+  \hline
+A &   9 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  B &   0 &  17 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  C &   0 &   0 &  15 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  D &   0 &   0 &   0 &  20 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  E &   0 &   0 &   0 &   0 &  16 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  F &   0 &   0 &   0 &   0 &   0 &  17 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  G &   0 &   0 &   0 &   0 &   0 &   0 &  12 &   0 &   0 &   0 &   0 &   0 \\ 
+  H &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  17 &   0 &   0 &   0 &   0 \\ 
+  I &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  17 &   0 &   0 &   0 \\ 
+  J &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  13 &   0 &   0 \\ 
+  K &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  18 &   0 \\ 
+  L &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  18 \\ 
+   \hline
+\end{tabular}
+\end{adjustbox}
+	\label{tabla:confusionMLtrain}
+	\caption{Matriz de confusión Multinomial train}
+\end{table}
+
+error de clasificación: 0
+\end{frame}
+
+\begin{frame}
+\begin{table}[ht]
+\begin{adjustbox}{width= 3.5in,center}
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & A & B & C & D & E & F & G & H & I & J & K & L \\ 
+  \hline
+A &  21 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  B &   0 &  14 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  C &   0 &   0 &  15 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  D &   0 &   0 &   1 &  12 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  E &   0 &   0 &   0 &   0 &  15 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  F &   0 &   0 &   0 &   0 &   1 &  18 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  G &   0 &   0 &   0 &   0 &   0 &   0 &  19 &   0 &   0 &   0 &   0 &   0 \\ 
+  H &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   9 &   6 &   0 &   0 &   0 \\ 
+  I &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  13 &   0 &   0 &   0 \\ 
+  J &   0 &   4 &   0 &   0 &   0 &   2 &   0 &   0 &   0 &  14 &   0 &   0 \\ 
+  K &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  12 &   0 \\ 
+  L &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &  14 \\ 
+   \hline
+\end{tabular}
+\end{adjustbox}
+	\label{tabla:confusionMLtest}
+	\caption{Matriz de confusión Multinomial test}
+\end{table}
+
+error de clasificación: 0.07368421
+\end{frame}
+
+\subsection{Validación cruzada con caret}
+
+\begin{frame}
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+Clasificador & Accuracy\\ 
+  \hline
+rn &   0.2953684  \\ 
+mr &   0.9626203  \\ 
+lda &   0.9498792 \\ 
+rf &   0.9709806 \\ 
+tree &   0.8468115\\ 
+   \hline
+\end{tabular}
+	\label{tabla:AccuracyCV}
+	\caption{Accuracy usando validación cruzada}
+\end{table}
 \end{frame}
 
 
+\begin{frame}
+\end{frame}
 \end{document}
