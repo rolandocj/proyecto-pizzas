@@ -136,7 +136,7 @@ La base de datos, \emph{pizzas.xls}, proporcionada para el desarrollo de este pr
 \item \textbf{MARCA:} Varibale tipo string, la cual indica la marca que fabrico la pizza. Es una variable categórica.
 \end{itemize}
 
-Conociendo solo esto, una duda natural sería ¿Existe algún comportamiento significativo por marca? ya que MARCA es la única variable categórica. Para esto, primero se analizará dicha variable. En la figura \ref{i1}, se muestra como la muestras, si no están balanceadas perfectamente, casi todas entran en el mismo rango de observaciones, variando desde 30 hasta 36 observaciones por marca.\\
+Conociendo solo esto, una duda natural sería ¿Existe algún comportamiento significativo por marca? ya que MARCA es la única variable categórica. Para esto, primero se analizará dicha variable. En la figura 1, se muestra como la muestras, si no están balanceadas perfectamente, casi todas entran en el mismo rango de observaciones, variando desde 30 hasta 36 observaciones por marca.\\
 
 \begin{figure}[h]
 \centering
@@ -145,7 +145,7 @@ Conociendo solo esto, una duda natural sería ¿Existe algún comportamiento sig
 \caption{Conteo de registros por marca}
 \end{figure}
 
-Se continua con el análisis del resto de las variables y empiricamente se puede considerar que la variable Ident no aportará mucho considerando comportamientos de acuerdo a marca. La figura \ref{i2} muestra el scatterplot de esta variable considerando el etiquetado por marca. Lo rescatable de esta gráfica son dos saltos que se presentan, las cuales sugieren prestar atención en las marcas donde se presentan estos saltos.\\
+Se continua con el análisis del resto de las variables y empiricamente se puede considerar que la variable Ident no aportará mucho considerando comportamientos de acuerdo a marca. La figura 2 muestra el scatterplot de esta variable considerando el etiquetado por marca. Lo rescatable de esta gráfica son dos saltos que se presentan, las cuales sugieren prestar atención en las marcas donde se presentan estos saltos.\\
 
 \begin{figure}[h]
 \centering
@@ -160,7 +160,7 @@ Sin embargo, para esta base de datos no fue posible recolectar este tipo de info
 
 Para cada una de las variables, se selecciono el gráfico \emph{boxplot} como manera idonea de resumir el comportamiento. Esto debido a que el boxplot contiene varias medidas de interés y gráficamente al comparar dos o más se pueden distinguir comportamientos visuales importantes.\\
 
-Comenzado con la variable HUMED, en la figura \ref{i3} se aprecia que existe un comportamiento homogeneo de humedad dentro de cada marca, no así entre marcas, pues se pueden distinguir 3 grupos de acuerdo al nivel de humedad presentado.\\
+Comenzado con la variable HUMED, en la figura 3 se aprecia que existe un comportamiento homogeneo de humedad dentro de cada marca, no así entre marcas, pues se pueden distinguir 3 grupos de acuerdo al nivel de humedad presentado.\\
 
 \begin{figure}[h]
 \centering
@@ -169,7 +169,7 @@ Comenzado con la variable HUMED, en la figura \ref{i3} se aprecia que existe un 
 \caption{Comportamiento de la variable Humed de acuerdo a la marca}
 \end{figure}
 
-Para la variable PROTE, se aprecia un comportamiento similar, en la figura \ref{i4} se muestra un comportamiento elevado en las primeras 4 marcas en comparación al resto.\\
+Para la variable PROTE, se aprecia un comportamiento similar, en la figura 4 se muestra un comportamiento elevado en las primeras 4 marcas en comparación al resto.\\
 
 \begin{figure}[h]
 \centering
@@ -178,7 +178,7 @@ Para la variable PROTE, se aprecia un comportamiento similar, en la figura \ref{
 \caption{Comportamiento de la variable Prote de acuerdo a la marca}
 \end{figure}
 
-Para la variable GRASA, la figura \ref{i5} muestra como existen 2 grupos y particularmente la marca H presenta observaciones en los dos grupos marcados.\\
+Para la variable GRASA, la figura 5 muestra como existen 2 grupos y particularmente la marca H presenta observaciones en los dos grupos marcados.\\
 
 \begin{figure}[h]
 \centering
@@ -187,7 +187,7 @@ Para la variable GRASA, la figura \ref{i5} muestra como existen 2 grupos y parti
 \caption{Comportamiento de la variable Grasa de acuerdo a la marca}
 \end{figure}
 
-Para la variable CENIZ, la figura \ref{i6} muestra un efecto similar al de proteinas, pues las primeras 4 marcas presentan niveles elevados, lo cual es de interés, pues al menos en México, existen normas las cuales regulan que el nivel de sodio no exceda 3 g por cada 100 g del alimento. Sin embargo, no se posee información de la procedencia de la base de datos.\\
+Para la variable CENIZ, la figura 6 muestra un efecto similar al de proteinas, pues las primeras 4 marcas presentan niveles elevados, lo cual es de interés, pues al menos en México, existen normas las cuales regulan que el nivel de sodio no exceda 3 g por cada 100 g del alimento. Sin embargo, no se posee información de la procedencia de la base de datos.\\
 
 \begin{figure}[h]
 \centering
@@ -196,7 +196,7 @@ Para la variable CENIZ, la figura \ref{i6} muestra un efecto similar al de prote
 \caption{Comportamiento de la variable CENIZ de acuerdo a la marca}
 \end{figure}
 
-La variable SODIO, resumida en la figura \ref{i7}, muestra niveles altos de sodio para la marca A y un comportamiento homogeneo en el resto de las marcas. En México, una rebanada de pizza mediana oscila entre los 75.7 y 100.7 g en promedio y el límite recomendado de sodio para una persona mayor de 19 años es de 2400mg, esto quiere decir que las pizzas de la marca A, contienen más de la mitad del sodio recomendado diario en una sola rebanada.\\
+La variable SODIO, resumida en la figura 7, muestra niveles altos de sodio para la marca A y un comportamiento homogeneo en el resto de las marcas. En México, una rebanada de pizza mediana oscila entre los 75.7 y 100.7 g en promedio y el límite recomendado de sodio para una persona mayor de 19 años es de 2400mg, esto quiere decir que las pizzas de la marca A, contienen más de la mitad del sodio recomendado diario en una sola rebanada.\\
 
 El comportamiento similar entre proteinas y sodio podría ser explicado por sus ingredientes si es que no todas las pizzas tienen una formula estandar, pues las pizzas que tienen más proteina podría ser explicado por la presencia de productos carnicos y tendría el efecto similar en el sodio.
 
@@ -207,7 +207,7 @@ El comportamiento similar entre proteinas y sodio podría ser explicado por sus 
 \caption{Comportamiento de la variable sodio de acuerdo a la marca}
 \end{figure}
 
-Para la variable CARBO, la figura \ref{i8} presenta 3 grupos separados por el nivel de carbohidratos.\\
+Para la variable CARBO, la figura 8 presenta 3 grupos separados por el nivel de carbohidratos.\\
 
 \begin{figure}[h]
 \centering
@@ -216,7 +216,7 @@ Para la variable CARBO, la figura \ref{i8} presenta 3 grupos separados por el ni
 \caption{Comportamiento de la variable Carbo de acuerdo a la marca}
 \end{figure}
 
-Para la variable CALOR, la figura \ref{i9} muestra 3 grupos de acuerdo al nivel de calorias contenidas.\\
+Para la variable CALOR, la figura 9 muestra 3 grupos de acuerdo al nivel de calorias contenidas.\\
 
 \begin{figure}[h]
 \centering
@@ -225,7 +225,7 @@ Para la variable CALOR, la figura \ref{i9} muestra 3 grupos de acuerdo al nivel 
 \caption{Comportamiento de la variable Calor de acuerdo a la marca}
 \end{figure}
 
-Empiricamente, un nutriologo puede considerar que los principales nutrientes de un alimento son carbohidratos, grasas y proteinas. La suma del gramaje de cada una de estas componentes debe ser muy cercano al total de masa. En nuestro caso, deberían sumar alguna cantidad proxima a 100g. La figura \ref{i10} muestra que solo 2 marcas, G y H, tienen cantidades cercanas a 100g, por lo tanto, debe existir algo más en la composición cuyo gramaje sea significativo, ejemplos de esto, pueden ser fibras crudas contenidas en harinas y verduras.\\
+Empiricamente, un nutriologo puede considerar que los principales nutrientes de un alimento son carbohidratos, grasas y proteinas. La suma del gramaje de cada una de estas componentes debe ser muy cercano al total de masa. En nuestro caso, deberían sumar alguna cantidad proxima a 100g. La figura 10 muestra que solo 2 marcas, G y H, tienen cantidades cercanas a 100g, por lo tanto, debe existir algo más en la composición cuyo gramaje sea significativo, ejemplos de esto, pueden ser fibras crudas contenidas en harinas y verduras.\\
 
 \begin{figure}[h]
 \centering
@@ -258,7 +258,7 @@ Proteina&0.04\\ \hline
 \end{center}
 \end{table}
 
-Por último, se presenta un gráfico de correlación entre las características de los alimentos. La figura \ref{i11} muestra, al menos 4 patrones importantes, a saber, Humedad-calorias, Proteina-ceniza, Ceniza-sodio y Ceniza-carbohidratos\\
+Por último, se presenta un gráfico de correlación entre las características de los alimentos. La figura 11 muestra, al menos 4 patrones importantes, a saber, Humedad-calorias, Proteina-ceniza, Ceniza-sodio y Ceniza-carbohidratos\\
 
 La relación entre humedad y calorías, tal vez corresponda a la presencia del fosfato, pues la presencia de fosfato modifica el valor de estas dos variables y se encuentra en alimentos como el queso y carnes.\\
 
@@ -303,7 +303,13 @@ Para las 3 variables dependientes, se encontró que la variables Grasa no es sig
 Con esto se consiguen estadisticos de $R^2$ de $0.96$, $0.94$ y $0.93$ para las respectivas variables dependientes, lo cual era de esperarse, pues en la figura 11, se aprecia como las variables dependientes están muy correlacionadas con las variables regresoras.
 
 \section{Conclusiones.}
+Desde el análisis exploratorio, los grupos por la variable Marca son muy distinguibles, lo cual se reafirma con el análisis multivariado.\\
 
+Las relaciones entre variables son bastante marcadas y hacen sentido con el expertise que brinda la bromatología.\\
+
+Solo se presentan algunas inconsistencias en algunas variables, por ejemplo, superar límites permitidos o tener mucha varianza en las observaciones para una variable. Esto se puede resolver teniendo acceso a más información de la base de datos, como procesos de medición de las variables y si las observaciones son estandar para todas las marcas.\\
+
+Además se pueden agregar variables extras como fibras, fosfatos e ingredientes y se puede crear algún índice que determine cual es una mejor pizza en terminos nutrimentales, por ejemplo, un índice que determine que las marcas L y K son mejores pues no se exceden en ningún nutriente.
 
 
 \end{document}

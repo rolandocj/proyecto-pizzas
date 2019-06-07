@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 \beamer@slide {i1}{8}
 \beamer@slide {i2}{9}
 \beamer@slide {i3}{10}
@@ -25,31 +24,3 @@
 \beamer@slide {tabla:confusionMLtrain}{36}
 \beamer@slide {tabla:confusionMLtest}{37}
 \beamer@slide {tabla:AccuracyCV}{38}
-=======
-\beamer@slide {i1}{6}
-\beamer@slide {i2}{7}
-\beamer@slide {i3}{8}
-\beamer@slide {i4}{9}
-\beamer@slide {i5}{10}
-\beamer@slide {i6}{11}
-\beamer@slide {i7}{12}
-\beamer@slide {i8}{13}
-\beamer@slide {i9}{14}
-\beamer@slide {i10}{15}
-\beamer@slide {i11}{16}
-\beamer@slide {tabla:pesos_PCA}{19}
-\beamer@slide {i_var_PCA}{20}
-\beamer@slide {i_biplot_PCA}{21}
-\beamer@slide {tabla:factores}{22}
-\beamer@slide {tabla:aproximacion}{23}
-\beamer@slide {i_biplot_Factores}{24}
-\beamer@slide {i_cluster_Elbow}{26}
-\beamer@slide {i_cluster_Silhouette}{27}
-\beamer@slide {i_cluster_PCA}{28}
-\beamer@slide {i_cluster_Factores}{29}
-\beamer@slide {tabla:confusionLDAtrain}{31}
-\beamer@slide {tabla:confusionLDAtest}{32}
-\beamer@slide {tabla:confusionMLtrain}{33}
-\beamer@slide {tabla:confusionMLtest}{34}
-\beamer@slide {tabla:AccuracyCV}{35}
->>>>>>> Stashed changes

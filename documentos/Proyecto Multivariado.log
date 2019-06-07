@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  6 JUN 2019 06:53
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Debian) (preloaded format=pdflatex 2019.2.12)  6 JUN 2019 06:34
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  6 JUN 2019 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,11 +989,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<<<<<<< Updated upstream
 <cimat.png, id=80, 180.675pt x 180.675pt>
-=======
-<cimat.png, id=68, 180.675pt x 180.675pt>
->>>>>>> Stashed changes
 File: cimat.png Graphic file (type png)
  <use cimat.png>
 Package pdftex.def Info: cimat.png used on input line 49.
@@ -1025,11 +1017,7 @@ Overfull \hbox (16.83684pt too wide) in paragraph at lines 47--64
 []$[]$ $[]$ 
  []
 
-<<<<<<< Updated upstream
 <mty.png, id=81, 284.7438pt x 275.5896pt>
-=======
-<mty.png, id=69, 284.7438pt x 275.5896pt>
->>>>>>> Stashed changes
 File: mty.png Graphic file (type png)
  <use mty.png>
 Package pdftex.def Info: mty.png used on input line 71.
@@ -1090,11 +1078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<<<<<<< Updated upstream
-<images/marca.png, id=126, 383.93437pt x 237.13594pt>
-=======
-<images/marca.png, id=111, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/marca.png, id=125, 383.93437pt x 237.13594pt>
 File: images/marca.png Graphic file (type png)
  <use images/marca.png>
 Package pdftex.def Info: images/marca.png used on input line 143.
@@ -1108,11 +1092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<<<<<<< Updated upstream
-<images/ident.png, id=128, 383.93437pt x 237.13594pt>
-=======
-<images/ident.png, id=113, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/ident.png, id=126, 383.93437pt x 237.13594pt>
 File: images/ident.png Graphic file (type png)
  <use images/ident.png>
 Package pdftex.def Info: images/ident.png used on input line 152.
@@ -1141,11 +1121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-<<<<<<< Updated upstream
-<images/humed.png, id=135, 383.93437pt x 237.13594pt>
-=======
-<images/humed.png, id=120, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/humed.png, id=131, 383.93437pt x 237.13594pt>
 File: images/humed.png Graphic file (type png)
  <use images/humed.png>
 Package pdftex.def Info: images/humed.png used on input line 167.
@@ -1159,11 +1135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-<<<<<<< Updated upstream
-<images/prote.png, id=137, 383.93437pt x 237.13594pt>
-=======
-<images/prote.png, id=122, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/prote.png, id=132, 383.93437pt x 237.13594pt>
 File: images/prote.png Graphic file (type png)
  <use images/prote.png>
 Package pdftex.def Info: images/prote.png used on input line 176.
@@ -1177,11 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-<<<<<<< Updated upstream
-<images/grasa.png, id=139, 383.93437pt x 237.13594pt>
-=======
-<images/grasa.png, id=124, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/grasa.png, id=133, 383.93437pt x 237.13594pt>
 File: images/grasa.png Graphic file (type png)
  <use images/grasa.png>
 Package pdftex.def Info: images/grasa.png used on input line 185.
@@ -1202,11 +1170,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.191 
        <./images/marca.png>]
-<<<<<<< Updated upstream
-<images/ceniz.png, id=150, 383.93437pt x 237.13594pt>
-=======
-<images/ceniz.png, id=135, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/ceniz.png, id=140, 383.93437pt x 237.13594pt>
 File: images/ceniz.png Graphic file (type png)
  <use images/ceniz.png>
 Package pdftex.def Info: images/ceniz.png used on input line 194.
@@ -1220,11 +1184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-<<<<<<< Updated upstream
-<images/sodio.png, id=152, 383.93437pt x 237.13594pt>
-=======
-<images/sodio.png, id=137, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/sodio.png, id=141, 383.93437pt x 237.13594pt>
 File: images/sodio.png Graphic file (type png)
  <use images/sodio.png>
 Package pdftex.def Info: images/sodio.png used on input line 205.
@@ -1238,11 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-<<<<<<< Updated upstream
-<images/carbo.png, id=154, 383.93437pt x 237.13594pt>
-=======
-<images/carbo.png, id=139, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/carbo.png, id=142, 383.93437pt x 237.13594pt>
 File: images/carbo.png Graphic file (type png)
  <use images/carbo.png>
 Package pdftex.def Info: images/carbo.png used on input line 214.
@@ -1256,11 +1212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-<<<<<<< Updated upstream
-<images/calor.png, id=156, 383.93437pt x 237.13594pt>
-=======
-<images/calor.png, id=141, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/calor.png, id=143, 383.93437pt x 237.13594pt>
 File: images/calor.png Graphic file (type png)
  <use images/calor.png>
 Package pdftex.def Info: images/calor.png used on input line 223.
@@ -1274,11 +1226,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<<<<<<< Updated upstream
-<images/pgc.png, id=158, 383.93437pt x 237.13594pt>
-=======
-<images/pgc.png, id=143, 383.93437pt x 237.13594pt>
->>>>>>> Stashed changes
+<images/pgc.png, id=144, 383.93437pt x 237.13594pt>
 File: images/pgc.png Graphic file (type png)
  <use images/pgc.png>
 Package pdftex.def Info: images/pgc.png used on input line 232.
@@ -1334,17 +1282,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-<<<<<<< Updated upstream
-<images/corr.png, id=176, 383.93437pt x 237.13594pt>
+<images/corr.png, id=158, 383.93437pt x 237.13594pt>
 File: images/corr.png Graphic file (type png)
  <use images/corr.png>
 Package pdftex.def Info: images/corr.png used on input line 271.
-=======
-<images/corr.png, id=161, 383.93437pt x 237.13594pt>
-File: images/corr.png Graphic file (type png)
-<use images/corr.png>
-Package pdftex.def Info: images/corr.png  used on input line 271.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 383.93343pt x 237.13535pt.
 
 
@@ -1405,17 +1346,10 @@ l.2 \restoregeometry
                      <./images/corr.png (PNG copy)>]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 9.
 
-<<<<<<< Updated upstream
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<images/varPCA.png, id=206, 639.13782pt x 551.81157pt>
-=======
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-<images/varPCA.png, id=191, 639.13782pt x 551.81157pt>
->>>>>>> Stashed changes
+<images/varPCA.png, id=195, 639.13782pt x 551.81157pt>
 File: images/varPCA.png Graphic file (type png)
  <use images/varPCA.png>
 Package pdftex.def Info: images/varPCA.png used on input line 34.
@@ -1424,15 +1358,13 @@ Package pdftex.def Info: images/varPCA.png used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< Updated upstream
-<images/biplotPCA.png, id=208, 602.25pt x 519.44063pt>
-=======
-<images/biplotPCA.png, id=193, 602.25pt x 519.44063pt>
->>>>>>> Stashed changes
+<images/biplotPCA.png, id=197, 602.25pt x 519.44063pt>
 File: images/biplotPCA.png Graphic file (type png)
+
 <use images/biplotPCA.png>
-Package pdftex.def Info: images/biplotPCA.png  used on input line 47.
+Package pdftex.def Info: images/biplotPCA.png used on input line 47.
 (pdftex.def)             Requested size: 451.68639pt x 389.57951pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1441,7 +1373,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 
-<<<<<<< Updated upstream
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.53 \restoregeometry
@@ -1472,48 +1403,11 @@ l.103
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.103 
-      ] <images/biplotFactores.png, id=241, 602.25pt x 519.44063pt>
+      ] <images/biplotFactores.png, id=230, 602.25pt x 519.44063pt>
 File: images/biplotFactores.png Graphic file (type png)
 
 <use images/biplotFactores.png>
 Package pdftex.def Info: images/biplotFactores.png used on input line 110.
-=======
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.53 \restoregeometry
-                     ] [14pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.53 \restoregeometry
-                      <./images/varPCA.png (PNG copy)>] [15pdfTeX warning (ext4
-): destination with the same identifier (name{figure.13}) has been already used
-, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.53 \restoregeometry
-                      <./images/biplotPCA.png (PNG copy)>] [16
-
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.103 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.103 
-      ]
-<images/biplotFactores.png, id=226, 602.25pt x 519.44063pt>
-File: images/biplotFactores.png Graphic file (type png)
-<use images/biplotFactores.png>
-Package pdftex.def Info: images/biplotFactores.png  used on input line 110.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 451.68639pt x 389.57951pt.
 ) (./analisis-agrupacion.tex [17pdfTeX warning (ext4): destination with the sam
 e identifier (name{figure.14}) has been already used, duplicate ignored
@@ -1522,22 +1416,14 @@ e identifier (name{figure.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.2 \restoregeometry
                      <./images/biplotFactores.png (PNG copy)>]
-<<<<<<< Updated upstream
-<images/clusterElbow.png, id=248, 451.6875pt x 335.75438pt>
-=======
-<images/clusterElbow.png, id=233, 451.6875pt x 335.75438pt>
->>>>>>> Stashed changes
+<images/clusterElbow.png, id=237, 451.6875pt x 335.75438pt>
 File: images/clusterElbow.png Graphic file (type png)
 
 <use images/clusterElbow.png>
 Package pdftex.def Info: images/clusterElbow.png used on input line 15.
 (pdftex.def)             Requested size: 225.84319pt x 167.87677pt.
-<<<<<<< Updated upstream
 
-<images/clusterSilhouette.png, id=250, 451.6875pt x 335.75438pt>
-=======
-<images/clusterSilhouette.png, id=235, 451.6875pt x 335.75438pt>
->>>>>>> Stashed changes
+<images/clusterSilhouette.png, id=239, 451.6875pt x 335.75438pt>
 File: images/clusterSilhouette.png Graphic file (type png)
 
 <use images/clusterSilhouette.png>
@@ -1556,12 +1442,7 @@ as been already used, duplicate ignored
                                                   \fi \fi 
 l.32 \subsection
                 {Asignación de clusters} <./images/clusterElbow.png (PNG copy)
-<<<<<<< Updated upstream
->] <images/clusterPCA.png, id=258, 602.25pt x 447.92343pt>
-=======
->]
-<images/clusterPCA.png, id=243, 602.25pt x 447.92343pt>
->>>>>>> Stashed changes
+>] <images/clusterPCA.png, id=247, 602.25pt x 447.92343pt>
 File: images/clusterPCA.png Graphic file (type png)
 
 <use images/clusterPCA.png>
@@ -1571,11 +1452,7 @@ Package pdftex.def Info: images/clusterPCA.png used on input line 38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< Updated upstream
-<images/clusterFactores.png, id=259, 602.25pt x 447.92343pt>
-=======
-<images/clusterFactores.png, id=244, 602.25pt x 447.92343pt>
->>>>>>> Stashed changes
+<images/clusterFactores.png, id=248, 602.25pt x 447.92343pt>
 File: images/clusterFactores.png Graphic file (type png)
 
 <use images/clusterFactores.png>
@@ -1606,7 +1483,6 @@ sed, duplicate ignored
                                                   \fi \fi 
 l.2 \restoregeometry
                      <./images/clusterFactores.png (PNG copy)>] [22
-<<<<<<< Updated upstream
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
@@ -1684,71 +1560,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
 [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
-=======
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
- been already used, duplicate ignored
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.35  \restoregeometry
-                      ] [23
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
- been already used, duplicate ignored
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.62 \restoregeometry
-                     ] [24
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.121 \subsection
-                 {Validación cruzada con caret}pdfTeX warning (ext4): destinat
-ion with the same identifier (name{table.7}) has been already used, duplicate i
-gnored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.121 \subsection
-                 {Validación cruzada con caret}])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 285.
- [25pdfTeX warning (ext4): destination with the same identifier (name{table.8})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.285 \end{document}
-                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
->>>>>>> Stashed changes
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+[27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (./Proyecto Multivariado.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
-<<<<<<< Updated upstream
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `"Proyecto Multivariado".out' has not changed
 .
 (rerunfilecheck)             Checksum: 2D32E0E76D74796937939F34AC93D9E5;1338.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
- 12578 strings out of 493013
- 181221 string characters out of 6136993
- 354098 words of memory out of 5000000
+ 12579 strings out of 493013
+ 181228 string characters out of 6136993
+ 354095 words of memory out of 5000000
  15768 multiletter control sequences out of 15000+600000
  18124 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1767,46 +1611,10 @@ fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2016/texmf-dist/fonts/type
 1/public/cm-super/sfss1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
 m-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
 tt1200.pfb>
-Output written on "Proyecto Multivariado.pdf" (26 pages, 726590 bytes).
+Output written on "Proyecto Multivariado.pdf" (27 pages, 725034 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 293 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  253 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
-Package rerunfilecheck Info: File `"Proyecto Multivariado".out' has not changed
-.
-(rerunfilecheck)             Checksum: 7911676B4395FDA3B58D68C8EB51FC3D;1159.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
- ) 
-Here is how much of TeX's memory you used:
- 12416 strings out of 494487
- 182156 string characters out of 6174924
- 355641 words of memory out of 5000000
- 15721 multiletter control sequences out of 15000+600000
- 18124 words of font info for 51 fonts, out of 8000000 for 9000
- 62 hyphenation exceptions out of 8191
- 45i,9n,37p,2062b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.6
-00pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx144
-0.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt
-1200.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cti1200.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1200.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx1200.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecbx1728.600pk> </home/rolando/.texlive2018/texmf-var/fonts/pk/ljfour/j
-knappen/ec/eccc1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Proyecto Multivariado.pdf" (25 pages, 647508 bytes).
-PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> Stashed changes
 
